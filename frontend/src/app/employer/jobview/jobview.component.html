@@ -1,0 +1,18 @@
+<h2>Candidates applied to this job:</h2>
+<div class="swiper">
+    <div class="card" [ngClass]="{'swiped-left': isSwipedLeft, 'swiped-right': isSwipedRight}">
+        <div class="card-content">
+            <h2 style="text-align: center;">List of candidates</h2>
+
+            <div class="candidate-cards">
+                <!-- Iterate over the candidate list and create a card for each candidate -->
+                <div class="candidate-card" *ngFor="let job of jobList">
+                    <h3>
+                        <a [routerLink]="['/job-details', job.jobid]">{{ job.jobid }}&nbsp;{{ job.jobtitle }}</a>
+                    </h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

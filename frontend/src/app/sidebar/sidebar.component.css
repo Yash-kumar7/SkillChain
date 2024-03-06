@@ -1,0 +1,39 @@
+.sidebar {
+  width: 250px; /* Adjust the width of the sidebar as needed */
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Add media query for small screens (mobile) */
+@media (max-width: 768px) {
+  /* Hide the sidebar by default on small screens */
+  .sidebar {
+    width: 0;
+  }
+
+  /* Display the hamburger button on small screens */
+  .header button {
+    display: block;
+  }
+
+  /* Adjust other styles for small screens as needed */
+}

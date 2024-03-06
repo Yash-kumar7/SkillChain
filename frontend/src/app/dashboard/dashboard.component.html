@@ -1,0 +1,45 @@
+<!--<h1>Explore companies!</h1>
+
+div class="swiper">
+  <div class="card" [ngClass]="{'swiped-left': isSwipedLeft, 'swiped-right': isSwipedRight}">
+    <div class="card-content">
+      <h2>{{ currentCard.name }}</h2>
+      <p>Experience: {{ currentCard.experience }}</p>
+      <p>Location: {{ currentCard.location }}</p>
+      <p>Work: {{ currentCard.work }}</p>
+    </div>
+    <div class="card-actions">
+      <button class="red-button clickable-button" (click)="swipeLeft()">&#10006;</button> <!-- Red button with "X" icon
+      <button class="green-button clickable-button" (click)="swipeRight()">&#10004;</button> <!-- Green button with checkmark icon
+    </div>
+  </div>
+</div--> 
+
+
+<div class="container">
+  <div class="screen">
+    <div class="screen__content">
+      <div class="login__field" [ngClass]="{'swiped-left': isSwipedLeft, 'swiped-right': isSwipedRight}">
+        <i class="login__icon fas fa-user"></i>
+          <h2>{{ currentCard.name }}</h2>
+          <p>Experience: {{ currentCard.experience }}</p>
+          <p>Location: {{ currentCard.location }}</p>
+          <p>Work: {{ currentCard.work }}</p>
+       
+        <div class="card-actions">
+          <button class="red-button clickable-button" (click)="swipeLeft()">&#10006;</button> <!-- Red button with "X" icon -->
+          <button class="green-button clickable-button" (click)="swipeRight()">&#10004;</button> <!-- Green button with checkmark icon -->
+          
+        </div>
+      </div>
+    </div>
+    <div class="screen__background">
+      <span class="screen__background__shape screen__background__shape4"></span>
+      <span class="screen__background__shape screen__background__shape3"></span>		
+      <span class="screen__background__shape screen__background__shape2"></span>
+      <span class="screen__background__shape screen__background__shape1"></span>
+    </div>		
+  </div>
+</div>
+
+  

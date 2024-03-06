@@ -1,0 +1,44 @@
+.header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Start hidden */
+  background-color: #111;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.sidebar.active {
+  left: 0; /* Slide in on hamburger click */
+}
+
+
+
+/* Media query for small screens (mobile) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .content {
+    margin-left: 0; /* No margin on mobile */
+  }
+}

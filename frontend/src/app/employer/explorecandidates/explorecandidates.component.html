@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="screen">
+    <div class="screen__content">
+      <div class="login__field" [ngClass]="{'swiped-left': isSwipedLeft, 'swiped-right': isSwipedRight}">
+        <i class="login__icon fas fa-user"></i>
+          <h2>Candidate Name : {{ currentCard.candidatename }}</h2>
+          <p>Skills : {{ currentCard.skills }}</p>
+          <p>Area of interest: {{ currentCard.interest }}</p>
+          <p>Best project description: {{ currentCard.projectdescription }}</p>
+       
+          <div class="card-actions">
+            <button class="red-button clickable-button" (click)="swipeLeft()">&#10006;</button> <!-- Red button with "X" icon -->
+            <button class="green-button clickable-button" (click)="swipeRight()">&#10004;</button> <!-- Green button with checkmark icon -->
+            
+          </div>
+        </div>
+      </div>
+      <div class="screen__background">
+        <span class="screen__background__shape screen__background__shape4"></span>
+        <span class="screen__background__shape screen__background__shape3"></span>		
+        <span class="screen__background__shape screen__background__shape2"></span>
+        <span class="screen__background__shape screen__background__shape1"></span>
+      </div>		
+    </div>
+  </div>
+  

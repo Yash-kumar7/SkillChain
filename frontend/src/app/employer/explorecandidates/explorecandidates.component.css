@@ -1,0 +1,32 @@
+/* Style for the card content */
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for the candidate feed container */
+.candidate-feed {
+  max-height: 400px; /* Define the maximum height for the feed */
+  overflow-y: auto; /* Enable vertical scrolling when the content exceeds the container's height */
+}
+
+/* Style for each candidate card */
+.candidate-card {
+  width: 200%; /* Take the full width of the feed container */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 10px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+/* Add hover effect to candidate cards */
+.candidate-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Add more styles as needed to customize the appearance of the cards */

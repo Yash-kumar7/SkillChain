@@ -1,0 +1,36 @@
+<div class="signup-container">
+  <h2>Job Posting</h2>
+  <div class="container">
+    <div class="screen">
+      <div class="screen__content">
+        <div class="login__field">
+          <i class="login__icon fas fa-user"></i>
+          <form [formGroup]="jobposting" (ngSubmit)="onSubmit()">
+              <div class="login__field">
+                <i class="login__icon fas fa-user"></i>
+              <label for="jobtitle">Job Title</label>
+              <input type="text" id="jobtitle" formControlName="jobtitle" required>
+              </div>
+           
+            <div class="form-group">
+              <label for="companyname">Company name</label>
+              <input type="text" id="companyname" formControlName="companyname" required>
+            </div>
+            <div class="form-group">
+              <label for="profile">Job Profile</label>
+              <input type="text" id="profile" formControlName="profile" required>
+            </div>
+            <button type="submit" [disabled]="!jobposting.valid">Post Job</button>
+          </form>
+        </div>
+        
+      </div>
+      <div class="screen__background">
+        <span class="screen__background__shape screen__background__shape4"></span>
+        <span class="screen__background__shape screen__background__shape3"></span>		
+        <span class="screen__background__shape screen__background__shape2"></span>
+        <span class="screen__background__shape screen__background__shape1"></span>
+      </div>	
+    </div>
+  </div>
+</div>
